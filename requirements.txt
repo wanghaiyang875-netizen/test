@@ -1,0 +1,14 @@
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+langchain-core==1.6.2
+langchain-community==0.4.2
+langchain-openai==1.6.0
+langchain-chroma==1.1.0
+langgraph==1.2.11
+chromadb>=1.0.9
+dashscope==1.27.4
+python-dotenv==1.2.2
+tavily-python
+unstructured==0.27.6
+markdown==3.10.3
+loguru==0.7.3

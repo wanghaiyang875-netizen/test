@@ -1,0 +1,16 @@
+services:
+  graph-rag-api:
+    build: .
+    container_name: graph-rag-api
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      # DeepSeek 使用 OpenAI 兼容协议；同时提供标准变量名，兼容 SDK 的凭证读取。
+      OPENAI_API_KEY: ${DEEPSEEK_API_KEY}
+      OPENAI_BASE_URL: ${BASE_URL}
+    volumes:
+      - ./chroma_db:/app/chroma_db
+      - ./logs:/app/logs
+    restart: unless-stopped

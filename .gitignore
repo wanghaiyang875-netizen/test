@@ -1,0 +1,23 @@
+# Local credentials and environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Runtime data and local settings
+chroma_db/
+logs/
+*.log
+.vscode/
+.idea/
+.DS_Store
